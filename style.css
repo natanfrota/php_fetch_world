@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    height: 400px;
+}
+
+.caixa {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 400px;
+    align-items: center;
+    background-color: rgb(93, 183, 15);
+}
+
+input {
+    margin-top: 10px;
+    height: 3rem;
+    width: 100%;
+    font: inherit;
+    text-align: center;
+}
+
+.paises, .cidades {
+    height: 100%;
+    width: 100%;
+    border: 1px solid black;
+    overflow-y: scroll;
+}
+
+.paises::-webkit-scrollbar, .cidades::-webkit-scrollbar {
+    display: none;
+}
+ 
+p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-weight: bold;
+    border: 1px solid black;
+    height: 3rem;
+    margin: 0;
+}
+
+p:hover {
+    background-color: aqua;
+    cursor: pointer;
+}
